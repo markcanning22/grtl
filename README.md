@@ -7,6 +7,8 @@
     ```
 2. Install dependencies
     ```sh
+   cd grtl
+
    cd server
    npm install
    cd client
