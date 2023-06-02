@@ -11,16 +11,15 @@
 
    cd server
    npm install
-   cd client
+   cd ../client
    npm install
    ```
-3. Start the server
+3. Start the client
     ```sh
-    cd server
     npm run dev
     ```
-4. Start the client
+4. Start the server
     ```sh
-    cd client
+    cd ../server
     npm run dev
     ```
