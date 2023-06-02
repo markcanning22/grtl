@@ -1,8 +1,9 @@
 # Setup
 
-1. Clone or download the code to your PhpStormProjects folder
+1. Clone or download the code to your PhpstormProjects folder
     ```sh
-    git clone git@github.com:markcanning22/grtl.git ./
+    cd ~/PhpstormProjects/
+    git clone git@github.com:markcanning22/grtl.git grtl
     ```
 2. Install dependencies
     ```sh
