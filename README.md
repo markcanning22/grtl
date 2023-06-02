@@ -1,5 +1,7 @@
 # Setup
 
+## Development
+
 1. Clone or download the code to your PhpstormProjects folder
     ```sh
     cd ~/PhpstormProjects/
@@ -25,3 +27,21 @@
     cd ../server
     npm run dev
     ```
+   
+## Build
+
+**NOTE: Make sure the code is cloned or downloaded first!**
+
+1. Build the client and start preview using Vite
+   ```sh
+   cd ~/PhpstormProjects/client
+   npm run build
+   npm run preview
+   ```
+
+2. Build the server and start the server
+   ```sh
+   cd ~/PhpstormProjects/server
+   npm run build
+   node ./dist/app.js
+   ```
