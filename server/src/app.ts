@@ -2,18 +2,6 @@ import express, { Express, Request, Response } from "express";
 
 const app: Express = express();
 
-enum Operation {
-  ADDITION = "add",
-  MULTIPLICATION = "multiply",
-  SUBTRACTION = "subtract",
-  DIVISION = "divide",
-}
-
-type Data = {
-  number1: number;
-  number2: number;
-};
-
 app.use(express.json());
 
 app.get("/api/newest-releases", (req: Request, res: Response): void => {
