@@ -1,0 +1,42 @@
+.game {
+    width: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    & .game__platform {
+        position: absolute;
+        right: 0;
+        padding: 5px 10px;
+        font-weight: bold;
+
+        &[data-platform="PS5"] {
+            background-color: var(--platform-ps);
+            color: #fff;
+        }
+
+        &[data-platform="Xbox Series X|S"] {
+            background-color: var(--platform-xbox);
+            color: #fff;
+        }
+
+        &[data-platform="Switch"] {
+            background-color: var(--platform-nintendo);
+            color: #fff;
+        }
+    }
+
+    & .game__cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    & .game__title {
+        background-color: #222;
+        padding: 10px 10px;
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+    }
+}

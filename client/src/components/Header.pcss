@@ -1,0 +1,56 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    font-size: 20px;
+    align-items: center;
+    padding: 30px;
+
+    & a.logo {
+        color: #000;
+        text-decoration: none;
+
+        & a:hover,
+        a:visited,
+        a:link {
+            text-decoration: none;
+        }
+    }
+
+    & .search-container {
+        background-color: #fff;
+        display: flex;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        width: 50%;
+
+        & .search-container__input {
+            border: none;
+            background-color: transparent;
+            outline: none;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        & .search-container__submit {
+            padding: 0 10px;
+            border: none;
+            background-color: transparent;
+            font-size: 20px;
+        }
+    }
+
+    & .buttons {
+        display: flex;
+        justify-content: space-between;
+
+        & .buttons__user,
+        & .buttons__basket {
+            background: none;
+            border: none;
+            font-size: 30px;
+            padding: 10px 20px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+nav {
+    background-color: #222;
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+
+        & li {
+            list-style: none;
+
+            > div {
+                padding: 25px 20px 20px;
+                border-bottom: 5px solid transparent;
+                min-width: 120px;
+                text-align: center;
+                font-weight: bold;
+
+                &:hover {
+                    cursor: pointer;
+                    transition: 0.2s ease-in-out;
+
+                    &[data-platform="playstation"] {
+                        border-color: var(--platform-ps)
+                    }
+                    &[data-platform="xbox"] {
+                        border-color: var(--platform-xbox)
+                    }
+                    &[data-platform="pc"] {
+                        border-color: var(--platform-pc)
+                    }
+                    &[data-platform="nintendo"] {
+                        border-color: var(--platform-nintendo)
+                    }
+                }
+            }
+        }
+    }
+}
